@@ -32,7 +32,4 @@ public class Application {
 		return new AMQPConnectionDetails(AMQ_BROKER_URL, AMQ_BROKER_USERNAME, AMQ_BROKER_PASSWORD);
 	}
 
-	// You could remove all parameters and pass it via environment variables https://qpid.apache.org/releases/qpid-jms-0.26.0/docs/index.html
-	// mvn clean package spring-boot:run -Djavax.net.debug=ssl -Djavax.net.ssl.keyStore=/home/rramalho/workspace/amqp/src/main/resources/amq-client.ks -Djavax.net.ssl.keyStorePassword=redhat -Djavax.net.ssl.trustStore=/home/rramalho/workspace/amqp/src/main/resources/amq-client.ts -Dtransport.trustStorePassword=redhat
-	// mvn clean package spring-boot:run -Djavax.net.debug=ssl -Djavax.net.ssl.keyStore=/home/aboucham/dev/syndesis/enmasse/Abel/amqp-certs/amq-client.ks -Djavax.net.ssl.keyStorePassword=redhat -Djavax.net.ssl.trustStore=/home/aboucham/dev/syndesis/enmasse/Abel/amqp-certs/amq-client.ks -Dtransport.trustStorePassword=redhat
 }

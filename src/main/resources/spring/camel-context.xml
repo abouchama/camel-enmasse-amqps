@@ -6,13 +6,10 @@
         <!--
           A route to generate a random order every 5th second.
 
-          When this route is started, it will automatically send xml messages to the JMS queue incomingOrders on the
-          ActiveMQ broker.
+          When this route is started, it will automatically send xml messages to the queue QueuePersisted on the EnMasse broker.
 
           The <log/> elements are used to add human-friendly business logging statements. They make it easier to see what the
           route is doing.
-
-          The amq component ensures to use the broker in the kubernetes cluster.
         -->
         <route id="generate-order-route" streamCache="true">
             <from id="route-timer" uri="timer:order?period=3000"/>
