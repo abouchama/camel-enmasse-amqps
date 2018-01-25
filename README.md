@@ -1,4 +1,4 @@
-# Camel AMQP+SSL application publishing messages in an EnMasse Broker in Openshift 
+# Camel AMQP+SSL application producing & consuming messages in an EnMasse Broker in Openshift 
 
 This example shows how to connect camel application to EnMasse (MaaS) message broker inside Openshift.
 
