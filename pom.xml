@@ -5,7 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.aboucham</groupId>
-	<artifactId>camel-amqp-ssl</artifactId>
+	<artifactId>camel-enmasse-amqps</artifactId>
 	<version>1.0</version>
 	<packaging>jar</packaging>
 
@@ -52,12 +52,6 @@
 		</dependency>
 
 		<dependency>
-			<groupId>ru.vyukov</groupId>
-			<artifactId>spring-boot-starter-prometheus</artifactId>
-			<version>0.1</version>
-		</dependency>
-
-		<dependency>
 			<groupId>org.apache.camel</groupId>
 			<artifactId>camel-amqp</artifactId>
 		</dependency>
@@ -83,24 +77,6 @@
 			<groupId>io.fabric8</groupId>
 			<artifactId>fabric8-arquillian</artifactId>
 			<scope>test</scope>
-		</dependency>
-		<!-- Hotspot JVM metrics -->
-		<dependency>
-			<groupId>io.prometheus</groupId>
-			<artifactId>simpleclient_hotspot</artifactId>
-			<version>${prometheus.version}</version>
-		</dependency>
-		<!-- Exposition servlet -->
-		<dependency>
-			<groupId>io.prometheus</groupId>
-			<artifactId>simpleclient_servlet</artifactId>
-			<version>${prometheus.version}</version>
-		</dependency>
-		<!-- The client -->
-		<dependency>
-			<groupId>io.prometheus</groupId>
-			<artifactId>simpleclient</artifactId>
-			<version>${prometheus.version}</version>
 		</dependency>
 	</dependencies>
 
