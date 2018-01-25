@@ -2,20 +2,15 @@ package com.aboucham.amqp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
 import org.apache.camel.component.amqp.AMQPConnectionDetails;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ImportResource;
-import ru.vyukov.prometheus.starter.EnablePrometheus;
 
 /**
  * The Spring-boot main class.
  */
 @SpringBootApplication
-@EnablePrometheus
 @ImportResource({"classpath:spring/camel-context.xml"})
 public class Application {
 	
